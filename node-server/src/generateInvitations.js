@@ -66,7 +66,7 @@ async function saveInvitationLinkToDatabase(link) {
   const API_BASE_URL = "http://localhost:1337"; // Change this to your Strapi API URL
 
   try {
-    await axios.post(`${API_BASE_URL}/invitation/create`, {
+    await axios.post(`${API_BASE_URL}/discord/create`, {
       data: {
         link,
         isUsed: false,
